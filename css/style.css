@@ -9,7 +9,7 @@
 4.0 Scattered Gallery
 5.0 Subpages
 6.0 Animations
-7.0 Media Queries
+7.0 Media Queries 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1.0 GLOBAL STYLES
@@ -482,7 +482,7 @@ HEADER
 header.default {
   width: 100%;
   height: 826px;
-  background: url("http://placehold.it/1900x826") center top no-repeat;
+  background: url("../img/nick-and-mollie-trail-1.jpg") center top no-repeat;
   background-size: cover;
 }
 header.default nav {
@@ -573,7 +573,7 @@ COUPLE SECTION
 #couple {
   max-width: none;
   height: 889px;
-  background: url("http://placehold.it/1900x889/eeeeee") center top no-repeat;
+  background: url("../img/nick-and-mollie-bridge-bw.jpg") center top no-repeat;
   background-size: cover;
   margin-top: 826px;
   position: relative;
@@ -647,7 +647,7 @@ COUNTDOWN SECTION
 #countdown {
   max-width: none;
   height: 689px;
-  background: url("http://placehold.it/1900x689") center top no-repeat;
+  background: url("../img/nick-and-mollie-wall-2.jpg") center top no-repeat;
   background-size: cover;
   padding-top: 7.8125rem;
   position: relative;
