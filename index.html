@@ -1,10 +1,382 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Nick and Mollie's wedding website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Matrimony HTML Template</title>
+	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script>
+	jQuery(function ($){
+		"use strict";
+		// Months = 0 to 11 (Jan to Dec)
+		var weddDay = new Date(2016, 4, 16);// YYYY, M, DD
+		$('#default-countdown').countdown({until: weddDay, format: 'YOD'});
+	});
+	</script>
 </head>
-<body>
-<img src="nick-and-mollie.jpg" alt="Nick and Mollie getting engaged. Thanks, @BSuch for the photo!">
-<p>Nick Such and Mollie Dawahare are getting married in 2016! More details coming soon.</p>
+<body class="home">
+
+	<!-- Mobile navigation -->
+	<nav class="mobile-nav-menu">
+		<a class="mobile-logo" href="index.html">Mollie and Nick's Wedding</a>
+		<a class="mobile-menu-btn" href="#"><span></span></a>
+		<div class="mobile-menu-container"></div>
+	</nav><!-- End .mobile-nav-menu -->
+
+	<!-- Header -->
+	<header class="default">
+		<nav>
+			<ul>
+				<li><a title="The Couple" href="#couple">The Couple</a></li>
+				<li><a title="Bridesmaids" href="#bridesmaid-gallery">Bridesmaids</a></li>
+				<li><a title="Groomsmen" href="#groomsmen-gallery">Groomsmen</a></li>
+				<li><a title="Gallery" href="#couple-gallery">Gallery</a></li>
+				<li><a title="Recent Posts" href="#recent-posts">Recent Posts</a></li>
+				<li><a title="RSVP &amp; Schedule" href="#rsvp">RSVP &amp; Schedule</a></li>
+				<li><a title="Blog" href="blog.html">Blog</a></li>
+				<li><a title="Contact" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<h1>Mollie <em>&amp;</em> Nick</h1>
+		<span class="ceremony-date">April 16<sup>th</sup>, 2016</span>
+	</header>
+	
+	<!-- Couple section -->
+	<section id="couple" class="row">
+		<div class="columns large-12">
+			<div class="columns large-4 medium-4">
+				<span class="headshot groom">
+					<img src="http://placehold.it/233x233/dddddd" alt="groom headshot" width="233">
+				</span>
+				<h3>Michael</h3>
+				<p class="desc groom">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
+					<span class="social groom">
+						<a title="Like us on Facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				        <a title="Follow us on Twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				        <a title="We're on Pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+			    	</span>
+				</p>
+			</div><!-- End .large-4 -->
+			<div class="columns large-4 medium-4">
+				<p class="giant-ampersand">&amp;</p>
+			</div><!-- End .large-4 -->
+			<div class="columns large-4 medium-4">
+				<span class="headshot bride">
+					<img src="http://placehold.it/233x233/dddddd" alt="bride headshot" width="233">
+				</span>
+				<h3>Annie</h3>
+				<p class="desc bride">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
+					<span class="social bride">
+						<a title="Like us on Facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				        <a title="Follow us on Twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				        <a title="We're on Pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+			    	</span>
+				</p>
+			</div><!-- End .large-4 -->
+		</div><!-- End .large-12 -->
+	</section><!-- End #couple -->
+	
+	<!-- Countdown section -->
+	<section id="countdown">
+		<h2>Countdown to our Wedding</h2>
+		<div id="default-countdown"></div>
+	</section><!-- End #countdown -->
+	
+	<!-- Bridesmaids gallery section -->
+	<section id="bridesmaid-gallery">
+		<h2>Bridesmaids</h2>
+		<nav class="dg-nav">	
+			<span class="dg-prev">&lt;</span>
+			<span class="dg-next">&gt;</span>
+		</nav>
+		<div id="bridesmaid-carousel" class="dg-container">
+			<div class="dg-wrapper">
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
+					<img src="http://placehold.it/429x294" alt="maid of honor">
+					<div>
+						<span class="guest-name">Angela Romero</span>
+						<span class="guest-title">MAID OF HONOUR</span>
+						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
+	equat odictetur adipiscing elit.</span>
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
+					<img src="http://placehold.it/429x294" alt="bridesmaid">
+					<div>
+						<span class="guest-name">Sue Storm</span>
+						<span class="guest-title">Bridesmaid</span>
+						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
+	equat odictetur adipiscing elit.</span>
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+				<!-- begin bridesmaid image -->
+				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
+					<img src="http://placehold.it/429x294" alt="bridesmaid">
+					<div>
+						<span class="guest-name">Jean Grey</span>
+						<span class="guest-title">Bridesmaid</span>
+						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
+	equat odictetur adipiscing elit.</span>
+					</div>
+				</a>
+				<!-- end bridesmaid image -->
+
+			</div><!-- End .dg-wrapper -->
+		</div><!-- End #bridesmaid-carousel -->
+		<div class="bridemaids-mobile-slider-wrap"><div class="bridemaids-mobile-slider"></div></div>
+	</section><!-- End #bridesmaid-gallery -->
+	
+	<!-- Groomsmen gallery section -->
+	<section id="groomsmen-gallery">
+		<h2>Groomsmen</h2>
+		<nav class="dg-nav-g">	
+			<span class="dg-prev-g">&lt;</span>
+			<span class="dg-next-g">&gt;</span>
+		</nav>
+		<div id="groomsmen-carousel" class="dg-container">
+			<div class="dg-wrapper-g">
+
+				<!-- begin groomsman image -->
+				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat center; background-size:cover;">
+					<img src="http://placehold.it/429x294" alt="groomsman">
+					<div>
+						<span class="guest-name">Nick Smith</span>
+						<span class="guest-title">Best Man</span>
+						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
+	equat odictetur adipiscing elit.</span>
+					</div>
+				</a>
+				<!-- end groomsman image -->
+				
+				<!-- begin groomsman image -->
+				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat center; background-size:cover;">
+					<img src="http://placehold.it/429x294" alt="groomsman">
+					<div>
+						<span class="guest-name">Peter Parker</span>
+						<span class="guest-title">Groomsman</span>
+						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
+	equat odictetur adipiscing elit.</span>
+					</div>
+				</a>
+				<!-- end groomsman image -->
+				
+				<!-- begin groomsman image -->
+				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat center; background-size:cover;">
+					<img src="http://placehold.it/429x294" alt="groomsman">
+					<div>
+						<span class="guest-name">Scott Summers</span>
+						<span class="guest-title">Groomsman</span>
+						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
+	equat odictetur adipiscing elit.</span>
+					</div>
+				</a>
+				<!-- end groomsman image -->
+
+			</div><!-- End .dg-wrapper-g -->
+		</div><!-- End #groomsmen-carousel -->
+		<div class="groomsmen-mobile-slider-wrap"><div class="groomsmen-mobile-slider"></div></div>
+	</section><!-- End #groomsmen-gallery -->
+	
+	<!-- Couple gallery section -->
+	<section id="couple-gallery">
+		<h2>Gallery</h2>
+		<div class="il-scattered-gallery">
+			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+		</div>
+		<div class="couple-slideshow-wrap">
+			<ul id="couple-slideshow"></ul>
+			<ul class="couple-thumbs"></ul>
+		</div><!-- End .couple-slideshow-wrap -->
+		<a id="gallery-launcher" href="#">Click to view gallery</a>
+		<div class="couple-mobile-slider-wrap"><div class="couple-mobile-slider"></div></div>
+	</section><!-- End #couple-gallery -->
+	
+	<!-- Recent posts section -->
+	<section id="recent-posts">
+		<h2>Recent Blog Posts</h2>
+		<div class="blog-posts-wrap">
+
+			<!-- begin blog post -->
+			<div class="blog-post columns large-4 medium-4 small-12">
+				<img src="http://placehold.it/294x232" alt="">
+				<div class="post-text">
+					<h3>Our Love Story</h3>
+					<span class="post-meta">By admin | Oct 22, 2014  |  Blog</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ullam rhoncus, leo at Lorem...</p>
+					<a href="single.html" class="read-more">Read more</a>
+				</div>
+			</div>
+			<!-- end blog post -->
+			
+			<!-- begin blog post -->
+			<div class="blog-post columns large-4 medium-4 small-12">
+				<img src="http://placehold.it/294x232" alt="">
+				<div class="post-text">
+					<h3>Bachelor's Party</h3>
+					<span class="post-meta">By admin | Oct 22, 2014  |  Blog</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ullam rhoncus, leo at Lorem...</p>
+					<a href="single.html" class="read-more">Read more</a>
+				</div>
+			</div>
+			<!-- end blog post -->
+			
+			<!-- begin blog post -->
+			<div class="blog-post columns large-4 medium-4 small-12">
+				<img src="http://placehold.it/294x232" alt="">
+				<div class="post-text">
+					<h3>Bridal Party</h3>
+					<span class="post-meta">By admin | Oct 22, 2014  |  Blog</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ullam rhoncus, leo at Lorem...</p>
+					<a href="single.html" class="read-more">Read more</a>
+				</div>
+			</div>
+			<!-- end blog post -->
+
+		</div><!-- End .blog-posts-wrap -->
+	</section><!-- End #recent-posts -->
+	
+	<!-- RSVP section -->
+	<section id="rsvp">
+		<div class="rsvp-form-wrap">
+			<h2>RSVP</h2>
+			<p class="rsvp-desc">Come and join our wedding party Lorem ipsum dolor sit amet,consectetur adipiscing elit. Nunc felectus placerat.</p>
+			<form id="rsvp-form" action="sendemail.php" method="post" data-abide>
+				<div class="columns large-12">
+					<label for="attendee-name">Name (required)</label>
+					<input id="attendee-name" name="attendee_name" type="text" placeholder="John Doe" required pattern="[a-zA-Z]+">
+					<small class="error">Please enter your name.</small>
+				</div><!-- End .large-12 -->
+				<div class="columns large-12">
+					<label for="attendee-email">Email Address (required)</label>
+					<input id="attendee-email" name="attendee_email" type="email" placeholder="johndoe@email.com" required>
+					<small class="error">Please enter a valid email.</small>
+				</div><!-- End .large-12 -->
+				<div class="columns large-4 medium-4 small-4">
+					<label for="guests">Guests</label>
+					<select id="guests" name="guests">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div><!-- End .large-4 -->
+				<div class="columns large-8 medium-8 small-8">
+					<label for="attending">I am attending</label>
+					<select id="attending" name="attending">
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+					</select>
+				</div><!-- End .large-8 -->
+				<div class="columns large-12">
+					<input id="rsvp-submit" class="button" type="submit" value="Submit" name="rsvp_submit">
+				</div><!-- End .large-12 -->
+			</form>
+		</div><!-- End .rsvp-form-wrap -->
+	</section><!-- End #rsvp -->
+	
+	<!-- Schedule section -->
+	<section id="schedule">		
+		<div class="schedule-content-wrap">
+			<h2>Schedule</h2>
+			<div class="row">
+				<div class="columns large-6">
+					<strong>Main Ceremony</strong>
+					<img src="http://placehold.it/175x175" alt="">
+					<div class="event-details">
+						<p>16:00h - 17:00<br>
+						LONDON, UK<br>
+						10, FIRST AVENUE<br>
+						<a href="">VIEW DIRECTIONS</a></p>
+						<p>Lorem ipsum dolor sit amet, con pisi cing elit, sed do eiusmod tempor exercitationemut labore et dolore magna aliqua. Ut enim ad consequatur</p>
+					</div><!-- End .event-details -->
+				</div><!-- End .columns.large-6 -->
+				<div class="columns large-6">
+					<strong>Wedding Party</strong>
+					<img src="http://placehold.it/175x175" alt="">
+					<div class="event-details">
+						<p>16:00h - 17:00<br>
+						LONDON, UK<br>
+						10, FIRST AVENUE<br>
+						<a href="">VIEW DIRECTIONS</a></p>
+						<p>Lorem ipsum dolor sit amet, con pisi cing elit, sed do eiusmod tempor exercitationemut labore et dolore magna aliqua. Ut enim ad consequatur</p>
+					</div><!-- End .event-details -->
+				</div><!-- End .columns.large-6 -->
+			</div><!-- End .row -->
+		</div><!-- End .schedule-content-wrap -->
+	</section><!-- End #schedule -->
+	
+	<!-- Contact section -->
+	<section id="contact">
+		<div class="contact-form-wrap">
+			<h2>Contact</h2>
+			<p class="contact-desc">Any further questions please send us a message in the comments box below or contact us at <em>415 183 1239</em></p>
+			<form id="contact-form" action="sendemail.php" method="post" data-abide>
+				<div class="columns large-12">
+					<label for="your-name">Name (required)</label>
+					<input id="your-name" name="your_name" type="text" placeholder="John Doe" required pattern="[a-zA-Z]+">
+
+					<label for="your-email">Email Address (required)</label>
+					<input id="your-email" name="your_email" type="email" placeholder="johndoe@email.com" required>
+					<small class="error">Please enter a valid email.</small>
+
+					<label for="comments">Comment (required)</label>
+					<textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
+				</div><!-- End .large-12 -->
+				<div class="columns large-12">
+					<input class="button" type="submit" value="Submit" name="contact_submit">
+				</div><!-- End .large-12 -->
+			</form>
+		</div><!-- End .contact-form-wrap -->
+	</section><!-- End #contact -->
+
+	<footer>
+		<p>
+			&copy; 2015 Matrimony - Premium HTML Template by <a title="Infinity Labs" href="http://infinitylabs.ca" target="_blank">Infinity Labs</a>
+			<span class="social-icons">
+				<a title="Like us on Facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				<a title="Follow us on Twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+				<a title="We're on Pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+			  </span>
+		</p>
+	</footer>
+	
+	<script src="js/foundation.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#bridesmaid-carousel').gallery();
+			$('#groomsmen-carousel').ggallery();
+			$('#couple-gallery').ilScatteredGallery();
+		});
+	</script>
+
+	<script>
+		jQuery(document).foundation();
+	</script>
 </body>
 </html>
