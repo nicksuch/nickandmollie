@@ -1,35 +1,44 @@
 - name: Rebecca Gray
   title: Matron of Honor
   story: Sisters!
+  image: /img/bridesmaids/rebecca_gray.jpg
 
 - name: Catherine Dawahare
   title: Maid of Honor
   story: Sisters!
+  image: /img/bridesmaids/catherine_dawahare.jpg
 
 - name: Frankie Dawahare
   title: Maid of Honor
   story: Sisters!
+  image: /img/bridesmaids/frankie_dawahare.jpg
 
 - name: Martha Renfroe
   title: Bridesmaid
   story: Cousins!
+  image: /img/bridesmaids/martha_renfroe.jpg
 
 - name: Kirsten Such
   title: Bridesmaid
   story: Future Sister-in-Law
+  image: /img/bridesmaids/kirsten_such.jpg
 
 - name: Brittney Such
   title: Bridesmaid
   story: Future Sister-in-Law
+  image: /img/bridesmaids/brittney_such.jpg
 
 - name: Krissy Vargo
   title: Bridesmaid
-  story: Sisters!
+  story: College Roommates!
+  image: /img/bridesmaids/krissy_vargo.jpg
 
 - name: Presley Mortenson
   title: Bridesmaid
-  story: College Roommates
+  story: College Roommates!
+  image: /img/bridesmaids/presley_mortenson.jpg
 
 - name: Elle Coldiron
   title: Bridesmaid
-  story: Sorority sisters!
+  story: Sorority sisters!  
+  image: /img/bridesmaids/elle_coldiron.jpg

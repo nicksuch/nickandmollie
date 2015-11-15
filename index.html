@@ -118,7 +118,7 @@ permalink: /
 	
 	<!-- Recent posts section -->
 	<section id="recent-posts">
-		<h2>Recent Blog Posts</h2>
+		<h2>Registries</h2>
 		<div class="blog-posts-wrap">
 
 			<!-- begin blog post -->
@@ -207,24 +207,26 @@ permalink: /
 			<h2>Schedule</h2>
 			<div class="row">
 				<div class="columns large-6">
-					<strong>Main Ceremony</strong>
-					<img src="http://placehold.it/175x175" alt="">
+					<strong>Ceremony</strong>
+					<img src="/img/media/st_francis_outside.jpg" alt="St. Francis of Assisi - Pikeville, KY">
 					<div class="event-details">
-						<p>16:00h - 17:00<br>
-						LONDON, UK<br>
-						10, FIRST AVENUE<br>
-						<a href="">VIEW DIRECTIONS</a></p>
+						<p>2:30pm<br>
+						St. Francis of Assisi Catholic Church<br>
+						137 Bryan St<br>
+						Pikeville, KY 41501<br>
+						<a href="https://www.google.com/maps/place/137+Bryan+St,+Pikeville,+KY+41501/">VIEW DIRECTIONS</a></p>
 						<p>Lorem ipsum dolor sit amet, con pisi cing elit, sed do eiusmod tempor exercitationemut labore et dolore magna aliqua. Ut enim ad consequatur</p>
 					</div><!-- End .event-details -->
 				</div><!-- End .columns.large-6 -->
 				<div class="columns large-6">
-					<strong>Wedding Party</strong>
-					<img src="http://placehold.it/175x175" alt="">
+					<strong>Reception</strong>
+					<img src="/img/media/green_meadow_outside.jpg" alt="Green Meadow Country Club">
 					<div class="event-details">
-						<p>16:00h - 17:00<br>
-						LONDON, UK<br>
-						10, FIRST AVENUE<br>
-						<a href="">VIEW DIRECTIONS</a></p>
+						<p>5:30pm<br>
+						Green Meadow Country Club<br>
+						6887 N Mayo Trl<br>
+						Pikeville, KY 41501<br>
+						<a href="https://www.google.com/maps/place/Green+Meadow+Country+Club/@37.5370378,-82.6052694,17z/data=!3m1!4b1!4m2!3m1!1s0x884512ffa8a24169:0x8d39d3492d24fada">VIEW DIRECTIONS</a></p>
 						<p>Lorem ipsum dolor sit amet, con pisi cing elit, sed do eiusmod tempor exercitationemut labore et dolore magna aliqua. Ut enim ad consequatur</p>
 					</div><!-- End .event-details -->
 				</div><!-- End .columns.large-6 -->
@@ -236,22 +238,23 @@ permalink: /
 	<section id="contact">
 		<div class="contact-form-wrap">
 			<h2>Contact</h2>
-			<p class="contact-desc">Any further questions please send us a message in the comments box below or contact us at <em>415 183 1239</em></p>
-			<form id="contact-form" action="sendemail.php" method="post" data-abide>
+			<p class="contact-desc">If you have any questions, please send us a message:</p>
+			<form id="contact-form" action="//formspree.io/us@nickandmollie.com" method="post" data-abide>
 				<div class="columns large-12">
 					<label for="your-name">Name (required)</label>
-					<input id="your-name" name="your_name" type="text" placeholder="John Doe" required pattern="[a-zA-Z]+">
+					<input id="your-name" name="name" type="text" placeholder="John Doe" required pattern="[a-zA-Z]+">
 
 					<label for="your-email">Email Address (required)</label>
-					<input id="your-email" name="your_email" type="email" placeholder="johndoe@email.com" required>
+					<input id="your-email" name="email" type="email" placeholder="johndoe@email.com" required>
 					<small class="error">Please enter a valid email.</small>
 
 					<label for="comments">Comment (required)</label>
 					<textarea name="comments" id="comments" placeholder="Comments..." required></textarea>
 				</div><!-- End .large-12 -->
 				<div class="columns large-12">
-					<input class="button" type="submit" value="Submit" name="contact_submit">
+					<input class="button" type="submit" value="Send" name="contact_submit">
 				</div><!-- End .large-12 -->
+				<input type="hidden" name="_next" value="//www.nickandmollie.com">
 			</form>
 		</div><!-- End .contact-form-wrap -->
 	</section><!-- End #contact -->
