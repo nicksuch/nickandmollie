@@ -1,0 +1,49 @@
+- name: Brian Raney
+  title: Best Man
+  story: Friends
+  image: /img/groomsmen/brian_raney.jpg
+
+- name: Luke Murray
+  title: Groomsman
+  story: Friends
+  image: /img/groomsmen/luke_murray.jpg
+
+- name: Anthony Robertson
+  title: Groomsman
+  story: Friends
+  image: /img/groomsmen/anthony_robertson.jpg
+
+- name: Garrett Ebel
+  title: Groomsman
+  story: >
+   Garrett and I have been friends since the early days of
+   Awesome Inc. We've started companies together, been almost
+   arrested together (turns out, we were totally innocent), and
+   now roomates for 3 years. When Mollie and I are ready to move
+   into a house, Garrett will probably be the one to build it.
+  image: /img/groomsmen/garrett_ebel.jpg
+
+- name: Michael Such
+  title: Groomsman
+  story: Cousins
+  image: /img/groomsmen/michael_such.jpg
+
+- name: Steve Adams
+  title: Groomsman
+  story: Cousins
+  image: /img/groomsmen/steve_adams.jpg
+
+- name: Kyle Raney
+  title: Groomsman
+  story: Friends
+  image: /img/groomsmen/kyle_raney.jpg
+
+- name: Braden Gray
+  title: Groomsman
+  story: Future Brother-in-Law
+  image: /img/groomsmen/braden_gray.jpg
+
+- name: Campbell Dawahare
+  title: Groomsman
+  story: Future Brother-in-Law  
+  image: /img/groomsmen/campbell_dawahare.jpg

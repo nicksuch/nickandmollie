@@ -1,26 +1,11 @@
 ---
 layout: page
+permalink: /
 ---
 
 	<!-- Couple section -->
 	<section id="couple" class="row">
 		<div class="columns large-12">
-			<div class="columns large-4 medium-4">
-				<span class="headshot groom">
-					<img src="http://placehold.it/233x233/dddddd" alt="groom headshot" width="233">
-				</span>
-				<h3>Nick</h3>
-				<p class="desc groom">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
-					<span class="social groom">
-						<a title="Like us on Facebook" href="https://www.facebook.com/nicksuch" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-				        <a title="Follow us on Twitter" href="https://twitter.com/nicksuch" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-			    	</span>
-				</p>
-			</div><!-- End .large-4 -->
-			<div class="columns large-4 medium-4">
-				<p class="giant-ampersand">&amp;</p>
-			</div><!-- End .large-4 -->
 			<div class="columns large-4 medium-4">
 				<span class="headshot bride">
 					<img src="http://placehold.it/233x233/dddddd" alt="bride headshot" width="233">
@@ -31,6 +16,22 @@ layout: page
 					<span class="social bride">
 						<a title="Like us on Facebook" href="https://www.facebook.com/mollie.dawahare" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 				        <a title="We're on Pinterest" href="https://www.pinterest.com/molliedawahare" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+			    	</span>
+				</p>
+			</div><!-- End .large-4 -->
+			<div class="columns large-4 medium-4">
+				<p class="giant-ampersand">&amp;</p>
+			</div><!-- End .large-4 -->
+			<div class="columns large-4 medium-4">
+				<span class="headshot groom">
+					<img src="http://placehold.it/233x233/dddddd" alt="groom headshot" width="233">
+				</span>
+				<h3>Nick</h3>
+				<p class="desc groom">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
+					<span class="social groom">
+						<a title="Like us on Facebook" href="https://www.facebook.com/nicksuch" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				        <a title="Follow us on Twitter" href="https://twitter.com/nicksuch" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 			    	</span>
 				</p>
 			</div><!-- End .large-4 -->
@@ -56,7 +57,7 @@ layout: page
 				{% for bridesmaid in site.data.bridesmaids %}
 				<!-- begin bridesmaid image -->
 				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
-					<img src="http://placehold.it/429x294" alt="maid of honor">
+					<img src="http://placehold.it/429x294" alt="{{bridesmaid.name}}, {{bridesmaid.title}}">
 					<div>
 						<span class="guest-name">{{bridesmaid.name}}</span>
 						<span class="guest-title">{{bridesmaid.title}}</span>
@@ -81,41 +82,18 @@ layout: page
 		<div id="groomsmen-carousel" class="dg-container">
 			<div class="dg-wrapper-g">
 
+				{% for groomsman in site.data.groomsmen %}
 				<!-- begin groomsman image -->
-				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat center; background-size:cover;">
-					<img src="http://placehold.it/429x294" alt="groomsman">
+				<a href="#" style="background:url({{groomsman.image}}) no-repeat center; background-size:cover;">
+					<img src="{{groomsman.image}}" alt="{{groomsman.name}}, {{groomsman.title}}">
 					<div>
-						<span class="guest-name">Nick Smith</span>
-						<span class="guest-title">Best Man</span>
-						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
-	equat odictetur adipiscing elit.</span>
+						<span class="guest-name">{{groomsman.name}}</span>
+						<span class="guest-title">{{groomsman.title}}</span>
+						<span class="guest-story">{{groomsman.story}}</span>
 					</div>
 				</a>
 				<!-- end groomsman image -->
-				
-				<!-- begin groomsman image -->
-				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat center; background-size:cover;">
-					<img src="http://placehold.it/429x294" alt="groomsman">
-					<div>
-						<span class="guest-name">Peter Parker</span>
-						<span class="guest-title">Groomsman</span>
-						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
-	equat odictetur adipiscing elit.</span>
-					</div>
-				</a>
-				<!-- end groomsman image -->
-				
-				<!-- begin groomsman image -->
-				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat center; background-size:cover;">
-					<img src="http://placehold.it/429x294" alt="groomsman">
-					<div>
-						<span class="guest-name">Scott Summers</span>
-						<span class="guest-title">Groomsman</span>
-						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
-	equat odictetur adipiscing elit.</span>
-					</div>
-				</a>
-				<!-- end groomsman image -->
+				{% endfor %}
 
 			</div><!-- End .dg-wrapper-g -->
 		</div><!-- End #groomsmen-carousel -->
