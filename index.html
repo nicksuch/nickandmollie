@@ -1,52 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Matrimony HTML Template</title>
-	<link href="img/favicon.png" rel="icon" type="image/png">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/foundation.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/vendor/modernizr.js"></script>
-	<script src="js/vendor/jquery-1.11.1.min.js"></script>
-	<script>
-	jQuery(function ($){
-		"use strict";
-		// Months = 0 to 11 (Jan to Dec)
-		var weddDay = new Date(2016, 3, 16);// YYYY, M, DD
-		$('#default-countdown').countdown({until: weddDay, format: 'YOD'});
-	});
-	</script>
-</head>
-<body class="home">
+---
+layout: page
+---
 
-	<!-- Mobile navigation -->
-	<nav class="mobile-nav-menu">
-		<a class="mobile-logo" href="index.html">Mollie and Nick's Wedding</a>
-		<a class="mobile-menu-btn" href="#"><span></span></a>
-		<div class="mobile-menu-container"></div>
-	</nav><!-- End .mobile-nav-menu -->
-
-	<!-- Header -->
-	<header class="default">
-		<nav>
-			<ul>
-				<li><a title="The Couple" href="#couple">The Couple</a></li>
-				<li><a title="Bridesmaids" href="#bridesmaid-gallery">Bridesmaids</a></li>
-				<li><a title="Groomsmen" href="#groomsmen-gallery">Groomsmen</a></li>
-				<li><a title="Gallery" href="#couple-gallery">Gallery</a></li>
-				<li><a title="Recent Posts" href="#recent-posts">Recent Posts</a></li>
-				<li><a title="RSVP &amp; Schedule" href="#rsvp">RSVP &amp; Schedule</a></li>
-				<li><a title="Blog" href="blog.html">Blog</a></li>
-				<li><a title="Contact" href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-		<h1>Mollie <em>&amp;</em> Nick</h1>
-		<span class="ceremony-date">April 16<sup>th</sup>, 2016</span>
-	</header>
-	
 	<!-- Couple section -->
 	<section id="couple" class="row">
 		<div class="columns large-12">
@@ -58,9 +13,8 @@
 				<p class="desc groom">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
 					<span class="social groom">
-						<a title="Like us on Facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-				        <a title="Follow us on Twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-				        <a title="We're on Pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+						<a title="Like us on Facebook" href="https://www.facebook.com/nicksuch" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				        <a title="Follow us on Twitter" href="https://twitter.com/nicksuch" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 			    	</span>
 				</p>
 			</div><!-- End .large-4 -->
@@ -75,9 +29,8 @@
 				<p class="desc bride">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
 					<span class="social bride">
-						<a title="Like us on Facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-				        <a title="Follow us on Twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-				        <a title="We're on Pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+						<a title="Like us on Facebook" href="https://www.facebook.com/mollie.dawahare" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				        <a title="We're on Pinterest" href="https://www.pinterest.com/molliedawahare" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
 			    	</span>
 				</p>
 			</div><!-- End .large-4 -->
@@ -100,41 +53,18 @@
 		<div id="bridesmaid-carousel" class="dg-container">
 			<div class="dg-wrapper">
 
+				{% for bridesmaid in site.data.bridesmaids %}
 				<!-- begin bridesmaid image -->
 				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
 					<img src="http://placehold.it/429x294" alt="maid of honor">
 					<div>
-						<span class="guest-name">Angela Romero</span>
-						<span class="guest-title">MAID OF HONOUR</span>
-						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
-	equat odictetur adipiscing elit.</span>
+						<span class="guest-name">{{bridesmaid.name}}</span>
+						<span class="guest-title">{{bridesmaid.title}}</span>
+						<span class="guest-story">{{bridesmaid.story}}</span>
 					</div>
 				</a>
 				<!-- end bridesmaid image -->
-
-				<!-- begin bridesmaid image -->
-				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
-					<img src="http://placehold.it/429x294" alt="bridesmaid">
-					<div>
-						<span class="guest-name">Sue Storm</span>
-						<span class="guest-title">Bridesmaid</span>
-						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
-	equat odictetur adipiscing elit.</span>
-					</div>
-				</a>
-				<!-- end bridesmaid image -->
-
-				<!-- begin bridesmaid image -->
-				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
-					<img src="http://placehold.it/429x294" alt="bridesmaid">
-					<div>
-						<span class="guest-name">Jean Grey</span>
-						<span class="guest-title">Bridesmaid</span>
-						<span class="guest-story"> Lorem ipsum dolor sit amet, consectetur adipisci Lorem ipsum dolor sit amet, conse Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ipsum cons
-	equat odictetur adipiscing elit.</span>
-					</div>
-				</a>
-				<!-- end bridesmaid image -->
+				{% endfor %}
 
 			</div><!-- End .dg-wrapper -->
 		</div><!-- End #bridesmaid-carousel -->
@@ -351,32 +281,3 @@
 			</form>
 		</div><!-- End .contact-form-wrap -->
 	</section><!-- End #contact -->
-
-	<footer>
-		<p>
-			&copy; 2015 Dawahare / Such Family
-			<span class="social-icons">
-				<a title="Like us on Facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-				<a title="Follow us on Twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-				<a title="We're on Pinterest" href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
-			  </span>
-		</p>
-	</footer>
-	
-	<script src="js/foundation.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/scripts.js"></script>
-
-	<script type="text/javascript">
-		$(function() {
-			$('#bridesmaid-carousel').gallery();
-			$('#groomsmen-carousel').ggallery();
-			$('#couple-gallery').ilScatteredGallery();
-		});
-	</script>
-
-	<script>
-		jQuery(document).foundation();
-	</script>
-</body>
-</html>

@@ -1,0 +1,21 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="{{site.description}}">
+	<title>{{site.title}} website</title>
+	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script>
+	jQuery(function ($){
+		"use strict";
+		// Months = 0 to 11 (Jan to Dec)
+		var weddDay = new Date(2016, 3, 16);// YYYY, M, DD
+		$('#default-countdown').countdown({until: weddDay, format: 'YOD'});
+	});
+	</script>
+</head>

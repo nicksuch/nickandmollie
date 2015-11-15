@@ -1,2 +1,2 @@
-# nickandmollie
-Nick and Mollie's wedding website
+#suchapair
+Mollie Dawahare and Nick Such's wedding website

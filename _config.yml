@@ -1,0 +1,9 @@
+# Site settings
+title: Mollie Dawahare and Nick Such's wedding
+email: us@nickandmollie.com
+description: "Mollie Dawahare and Nick Such are getting married on April 16, 2016 in Pikeville, Kentucky."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.nickandmollie.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
