@@ -759,8 +759,7 @@ COUPLE GALLERY
 #couple-gallery {
   width: 100%;
   height: 1198px;
-  background: url("http://placehold.it/1900x1198") center top no-repeat;
-  background-size: cover;
+  background: url("../img/backgrounds/gallery_background.png") repeat;
   padding-top: 5.375rem;
   text-align: center;
   position: relative;

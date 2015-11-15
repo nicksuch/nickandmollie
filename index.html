@@ -14,8 +14,8 @@ permalink: /
 				<p class="desc bride">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
 					<span class="social bride">
-						<a title="Like us on Facebook" href="https://www.facebook.com/mollie.dawahare" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-				        <a title="We're on Pinterest" href="https://www.pinterest.com/molliedawahare" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
+						<a title="Mollie on Facebook" href="https://www.facebook.com/mollie.dawahare" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				        <a title="Mollie on Pinterest" href="https://www.pinterest.com/molliedawahare" target="_blank"><i class="fa fa-pinterest-p fa-2x"></i></a>
 			    	</span>
 				</p>
 			</div><!-- End .large-4 -->
@@ -30,8 +30,8 @@ permalink: /
 				<p class="desc groom">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et vulputate magna, sed ornare elit. Nunc vitae quam sit amet dolor tincidunt sodales et ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vitae mi semper, vulputate
 					<span class="social groom">
-						<a title="Like us on Facebook" href="https://www.facebook.com/nicksuch" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-				        <a title="Follow us on Twitter" href="https://twitter.com/nicksuch" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+						<a title="Nick on Facebook" href="https://www.facebook.com/nicksuch" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+				        <a title="Nick on Twitter" href="https://twitter.com/nicksuch" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 			    	</span>
 				</p>
 			</div><!-- End .large-4 -->
@@ -104,13 +104,9 @@ permalink: /
 	<section id="couple-gallery">
 		<h2>Gallery</h2>
 		<div class="il-scattered-gallery">
-			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
-			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
-			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
-			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
-			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
-			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
-			<a href="#"><img src="http://placehold.it/1000x667/eeeeee" alt=""></a>
+		{% for photo in site.static_files %}{% if photo.path contains '/img/gallery' %}
+			<a href="#"><img src="{{photo.path}}" alt="Mollie and Nick"></a>
+		{% endif %}{% endfor %}
 		</div>
 		<div class="couple-slideshow-wrap">
 			<ul id="couple-slideshow"></ul>

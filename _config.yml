@@ -6,11 +6,5 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.nickandmollie.com" # the base hostname & protocol for your site
 permalink: /blog/:year/:month/:day/:title/
 
-# Collections
-collections:
- gallery_photos:
-  path: /img/gallery/
-  output: false
-
 # Build settings
 markdown: kramdown
