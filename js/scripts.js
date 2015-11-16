@@ -103,8 +103,8 @@ $(document).ready(function(){
           $('#recent-posts .blog-post').addClass('on-screen');
         }
 
-        if( $('#rsvp').isOnScreen() ){
-          $('.rsvp-form-wrap').addClass('on-screen');
+        if( $('#registry').isOnScreen() ){
+          $('.registry-form-wrap').addClass('on-screen');
         }
 
         if( $('#schedule').isOnScreen() ){

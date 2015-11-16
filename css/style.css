@@ -612,7 +612,7 @@ COUPLE SECTION
   margin-top: 1.5rem;
   line-height: 22px;
   letter-spacing: 1px;
-  word-break: break-all;
+  word-break: break-word;
 }
 #couple .social {
   display: block;
@@ -732,7 +732,7 @@ GROOMSMEN GALLERY
   margin-top: 0;
   padding-top: 5.375rem;
   height: 723px;
-  background: url("http://placehold.it/1900x723/333333") center top no-repeat;
+  background: url("../img/backgrounds/groomsmen_background.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1050,9 +1050,9 @@ body.home .blog-post:first-child + .blog-post + .blog-post.on-screen {
 }
 
 /*--------------------------------------------------------------
-RSVP SECTION
+REGISTRY SECTION
 --------------------------------------------------------------*/
-#rsvp {
+#registry {
   width: 100%;
   height: 973px;
   background: url("http://placehold.it/1900x973/eeeeee") center top no-repeat;
@@ -1061,16 +1061,16 @@ RSVP SECTION
   position: relative;
   z-index: 2;
 }
-#rsvp h2 {
+#registry h2 {
   color: #282828;
   padding-bottom: 1.25rem;
 }
-#rsvp h2:after {
+#registry h2:after {
   width: 72px;
   margin-left: -36px;
 }
 
-.rsvp-form-wrap {
+.registry-form-wrap {
   background: #fff;
   width: 663px;
   height: 732px;
@@ -1085,23 +1085,25 @@ RSVP SECTION
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-.rsvp-form-wrap.on-screen {
+.registry-form-wrap.on-screen {
   top: 0;
   opacity: 1;
 }
-.rsvp-form-wrap form {
+.registry-form-wrap div {
   background: #fff;
   width: 328px;
   margin: 0 auto;
+  text-align: center;
 }
-.rsvp-form-wrap .large-12:first-child {
+
+.registry-form-wrap .large-12:first-child {
   margin-bottom: 1.5rem;
 }
-.rsvp-form-wrap .large-12:first-child + .large-12 {
+.registry-form-wrap .large-12:first-child + .large-12 {
   margin-bottom: 3px;
 }
 
-.rsvp-desc {
+.registry-desc {
   text-align: center;
   color: #818181;
   width: 326px;
@@ -1110,6 +1112,17 @@ RSVP SECTION
   font-size: 0.875rem;
   line-height: 19px;
   letter-spacing: 1px;
+}
+
+.registry-image img {
+  width: 250px;
+  margin: 0px auto;
+}
+
+.registry-image a {
+  height: 90px;
+  margin-top: 10px;
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -2241,7 +2254,7 @@ SINGLE POST
     position: static;
   }
 
-  .rsvp-form-wrap,
+  .registry-form-wrap,
   .schedule-content-wrap,
   .contact-form-wrap {
     opacity: 1;
@@ -2454,7 +2467,7 @@ SINGLE POST
   }
 }
 @media screen and (max-width: 679px) {
-  .rsvp-form-wrap,
+  .registry-form-wrap,
   .schedule-content-wrap,
   .contact-form-wrap {
     width: 100%;
@@ -2599,7 +2612,7 @@ SINGLE POST
   }
 
   .contact-form-wrap form,
-  .rsvp-form-wrap form {
+  .registry-form-wrap form {
     width: 100%;
   }
 }
@@ -2641,7 +2654,7 @@ SINGLE POST
     padding-top: 0;
   }
 
-  .rsvp-form-wrap,
+  .registry-form-wrap,
   .schedule-content-wrap,
   .contact-form-wrap {
     padding-top: 3.125rem;
@@ -2682,7 +2695,7 @@ SINGLE POST
   }
 
   .contact-desc,
-  .rsvp-desc {
+  .registry-desc {
     width: 280px;
   }
 
