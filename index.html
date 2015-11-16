@@ -56,8 +56,8 @@ permalink: /
 
 				{% for bridesmaid in site.data.bridesmaids %}
 				<!-- begin bridesmaid image -->
-				<a href="#" style="background:url(http://placehold.it/429x294) no-repeat 50% center; background-size:cover;">
-					<img src="http://placehold.it/429x294" alt="{{bridesmaid.name}}, {{bridesmaid.title}}">
+				<a href="#" style="background:url({{bridesmaid.image}}) no-repeat 50% center; background-size:cover;">
+					<img src="{{bridesmaid.image}}" alt="{{bridesmaid.name}}, {{bridesmaid.title}}">
 					<div>
 						<span class="guest-name">{{bridesmaid.name}}</span>
 						<span class="guest-title">{{bridesmaid.title}}</span>
