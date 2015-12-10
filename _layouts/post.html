@@ -9,17 +9,17 @@ layout: default
 	<!-- Main content -->
 	<div class="container">
 		<div class="post-header">
-			<div class="columns medium-4 large-4 small-12"><a href="blog.html" class="round-btn">Back to Blog</a></div>
+			<div class="columns medium-4 large-4 small-12"><a href="/blog/" class="round-btn">Back to Blog</a></div>
 			<div class="columns medium-8 large-8 small-12">
 				<span class="postmeta">By {{page.author}} &nbsp;|&nbsp; {{page.date | date: "%B %-d, %Y"}} &nbsp;</span>
 				<span class="share-btns">
-					<a href="http://www.facebook.com/sharer/sharer.php?u={{page.url}}" target="blank">Share on Facebook</a>
+					<a href="http://www.facebook.com/sharer/sharer.php?u={{page.url}}" target="_blank">Share on Facebook</a>
 					<a href="https://twitter.com/intent/tweet?text={{page.title}}&amp;url={{page.url}}" target="_blank">Share on Twitter</a>
 				</span><!-- End .share-btns -->
 			</div><!-- End .large-8 -->
 		</div>
 		<article class="single-post">
-			<img src="{{post.image}}" alt="{{post.image_alt}}">
+			<img src="{{page.image}}" alt="{{page.image_alt}}">
 
 			{{ content }}
 

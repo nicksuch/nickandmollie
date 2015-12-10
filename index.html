@@ -122,41 +122,19 @@ permalink: /
 		<h2>Recent Posts</h2>
 		<div class="blog-posts-wrap">
 
+		{% for post in site.posts limit: 3 %}
 			<!-- begin blog post -->
 			<div class="blog-post columns large-4 medium-4 small-12">
-				<img src="http://placehold.it/294x232" alt="">
+				<a href="{{post.url}}"><img src="{{post.image}}" alt="{{post.image_alt}}"></a>
 				<div class="post-text">
-					<h3>Our Love Story</h3>
-					<span class="post-meta">By admin | Oct 22, 2014  |  Blog</span>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ullam rhoncus, leo at Lorem...</p>
-					<a href="single.html" class="read-more">Read more</a>
+					<h3>{{post.title}}</h3>
+					<span class="post-meta">By {{post.author}} | {{post.date | date: "%b %-d, %Y"}}  |  Blog</span>
+					<p>{{ post.content | strip_html | truncatewords: 12, '...' }}</p>
+					<a href="{{post.url}}" class="read-more">Read more</a>
 				</div>
 			</div>
 			<!-- end blog post -->
-			
-			<!-- begin blog post -->
-			<div class="blog-post columns large-4 medium-4 small-12">
-				<img src="http://placehold.it/294x232" alt="">
-				<div class="post-text">
-					<h3>Bachelor's Party</h3>
-					<span class="post-meta">By admin | Oct 22, 2014  |  Blog</span>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ullam rhoncus, leo at Lorem...</p>
-					<a href="single.html" class="read-more">Read more</a>
-				</div>
-			</div>
-			<!-- end blog post -->
-			
-			<!-- begin blog post -->
-			<div class="blog-post columns large-4 medium-4 small-12">
-				<img src="http://placehold.it/294x232" alt="">
-				<div class="post-text">
-					<h3>Bridal Party</h3>
-					<span class="post-meta">By admin | Oct 22, 2014  |  Blog</span>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ullam rhoncus, leo at Lorem...</p>
-					<a href="single.html" class="read-more">Read more</a>
-				</div>
-			</div>
-			<!-- end blog post -->
+			{%endfor%}
 
 		</div><!-- End .blog-posts-wrap -->
 	</section><!-- End #recent-posts -->

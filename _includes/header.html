@@ -21,6 +21,6 @@
       </ul>
     </nav>
     {% comment %} Should switch based on page/post name, but need to maintain the emphasis for homepage{% endcomment %} 
-    <h1>Mollie <em>&amp;</em> Nick</h1>
-    <span class="ceremony-date">April 16<sup>th</sup>, 2016</span>
+    <h1>{{page.title}}</h1>
+    {%if page.url == '/'%}<span class="ceremony-date">April 16<sup>th</sup>, 2016</span>{%endif%}
   </header>
