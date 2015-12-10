@@ -9,16 +9,18 @@
   <header class="default">
     <nav>
       <ul>
-        <li><a title="The Couple" href="#couple">The Couple</a></li>
-        <li><a title="Bridesmaids" href="#bridesmaid-gallery">Bridesmaids</a></li>
-        <li><a title="Groomsmen" href="#groomsmen-gallery">Groomsmen</a></li>
-        <li><a title="Gallery" href="#couple-gallery">Gallery</a></li>
-        <li><a title="Recent Posts" href="#recent-posts">Recent Posts</a></li>
-        <li><a title="Registry" href="#registry">Registry</a></li>
-        <li><a title="Schedule" href="#schedule">Schedule</a></li>
-        <li><a title="Contact" href="#contact">Contact</a></li>
+      <!-- page.url {{page.url}} -->
+        <li><a title="The Couple" href="{% if page.url != '/' %}/{% endif %}#couple">The Couple</a></li>
+        <li><a title="Bridesmaids" href="{% if page.url != '/' %}/{% endif %}#bridesmaid-gallery">Bridesmaids</a></li>
+        <li><a title="Groomsmen" href="{% if page.url != '/' %}/{% endif %}#groomsmen-gallery">Groomsmen</a></li>
+        <li><a title="Gallery" href="{% if page.url != '/' %}/{% endif %}#couple-gallery">Gallery</a></li>
+        <li><a title="Recent Posts" href="{% if page.url != '/' %}/{% endif %}#recent-posts">Recent Posts</a></li>
+        <li><a title="Registry" href="{% if page.url != '/' %}/{% endif %}#registry">Registry</a></li>
+        <li><a title="Schedule" href="{% if page.url != '/' %}/{% endif %}#schedule">Schedule</a></li>
+        <li><a title="Contact" href="{% if page.url != '/' %}/{% endif %}#contact">Contact</a></li>
       </ul>
     </nav>
+    {% comment %} Should switch based on page/post name, but need to maintain the emphasis for homepage{% endcomment %} 
     <h1>Mollie <em>&amp;</em> Nick</h1>
     <span class="ceremony-date">April 16<sup>th</sup>, 2016</span>
   </header>
