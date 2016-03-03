@@ -1130,7 +1130,7 @@ SCHEDULE SECTION
 --------------------------------------------------------------*/
 #schedule {
   width: 100%;
-  height: 980px;
+  height: 1075px;
   background: url("../img/backgrounds/gallery_background.png") repeat;
   padding-top: 7.875rem;
   position: relative;
@@ -1166,7 +1166,7 @@ SCHEDULE SECTION
   border-radius: 50%;
   border: 6px solid #f3f3f3;
 }
-#schedule .large-6 p {
+#schedule .large-6 p, #schedule .large-12 p {
   font-family: "Lato", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -1191,7 +1191,7 @@ SCHEDULE SECTION
 .schedule-content-wrap {
   background: #fff;
   width: 663px;
-  height: 732px;
+  height: 830px;
   margin: 0 auto;
   padding-top: 5rem;
   position: relative;
