@@ -1073,7 +1073,7 @@ REGISTRY SECTION
 .registry-form-wrap {
   background: #fff;
   width: 663px;
-  height: 732px;
+  height: 825px;
   margin: 0 auto;
   padding-top: 5rem;
   position: relative;
@@ -1115,7 +1115,7 @@ REGISTRY SECTION
 }
 
 .registry-image img {
-  width: 250px;
+  width: 242px;
   margin: 0px auto;
 }
 
